@@ -1,0 +1,224 @@
+.MainText {
+    font-size: 20px;
+    color: #FDFEFE;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 15px;
+}   
+
+h5 {
+    margin-left: 500px;
+    color: #FDFEFE;
+    font-size: 39px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.h4 {
+    position: relative;
+    top: 400px;
+    margin-left: 520px;
+    color: white;
+    font-weight: bolder;
+    color: white;
+}
+
+.ButtonList {
+    position: relative;
+    top:-310px;
+    margin-left: 70px;
+}
+
+h1 {
+    height: 20px;
+}
+
+.MainImage {
+    position: relative;
+    float: right;
+    height: 80px;
+    width: 140px;
+    top: 5px;
+}
+
+.MainImageText {
+    position: relative;
+    left: -20px;
+    float: right;
+    font-size: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.Medicalbtn {
+    background-color: #17202A;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 30px;
+    margin: auto;
+    transition: height 650ms;
+    margin-bottom:5px;
+}
+
+.Medicalbtn:hover {
+    background-color:#666464;
+    height:50px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.body1 {
+    background-color:#808177;
+    height: 110vh;
+    width: auto;
+    background-image: linear-gradient(#2D00FF,#EF00B8,#FF0072,#FF6B3F,#FFBC34,#F9F871,#2D00FF);
+}
+
+.MedicalTag {
+    font-size:large;
+    color: white;
+    font-weight: bold;
+    font-family:'Trebuchet MS';
+}
+
+.Medicalbtn1 {
+    background-color: #17202A;
+    color:#FDFEFE;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 30px;
+    margin: auto;
+    animation-name: Flicker;
+    animation-duration: 20s;
+    animation-delay: 30s;
+    transition: height 650ms;
+    margin-bottom:5px;
+}
+
+.Medicalbtn1:hover {
+    background-color:#666464;
+    height:50px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.Medical {
+    list-style: none;
+    position:absolute;
+    top: 303px;
+}
+
+.Businessbtn {
+    background-color: #17202A;
+    color:#FDFEFE;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 30px;
+    margin: auto;
+    transition: height 650ms;
+    margin-bottom:5px;
+}
+
+.Businessbtn:hover {
+    background-color:#666464;
+    height:50px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.BusinessTag {
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+}
+
+.Business {
+    position: absolute;
+    list-style: none;
+    top: 303px;
+    left: 300px;
+}
+
+.Technologybtn {
+    background-color: #17202A;
+    color:#FDFEFE;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 30px;
+    margin: auto;
+    transition: height 650ms;
+    margin-bottom:5px;
+}
+
+.Technologybtn:hover {
+    background-color:#666464;
+    height:50px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.TechnologyTag {
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    font-family:'Trebuchet MS';
+}
+
+.Technology {
+    position: absolute;
+    list-style: none;
+    top: 303px;
+    left: 560px; 
+}
+
+.Miscellaneousbtn {
+    background-color: #17202A;
+    color:#FDFEFE;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 30px;
+    margin: auto;
+    transition: height 650ms;
+    margin-bottom:5px;
+}
+
+.Miscellaneousbtn:hover {
+    background-color:#666464;
+    height:50px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.MiscellaneousTag {
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    font-family:'Trebuchet MS';
+}
+
+.Miscellaneous {
+    position: absolute;
+    list-style: none;
+    top: 303px;
+    left: 840px; 
+}
+
+@keyframes Flicker {
+    0% {background-color:#17202A;}
+    5% {background-color: #877d7c;}
+    10% {background-color: #17202A;}
+    15% {background-color: #877d7c;}
+    20% {background-color:#17202A;}
+    25% {background-color: #877d7c;}
+    30% {background-color:#17202A;}
+    35% {background-color: #877d7c;}
+    40% {background-color:#17202A;}
+    45% {background-color: #877d7c;}
+    50% {background-color:#17202A;}
+    55% {background-color: #877d7c;}
+    60% {background-color:#17202A;}
+    65% {background-color: #877d7c;}
+    70% {background-color:#17202A;}
+    75% {background-color: #877d7c;}
+    80% {background-color:#17202A;}
+    85% {background-color: #877d7c;}
+    90% {background-color:#17202A;}
+    95% {background-color: #877d7c;}
+    100% {background-color:#17202A;}
+}

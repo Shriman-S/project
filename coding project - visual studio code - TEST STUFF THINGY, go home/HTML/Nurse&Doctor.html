@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <style>
+            .nursebody {
+                background-color:#000000;
+                background-image: linear-gradient(#8A0EB5,#0058E9,#007DFF,#0096F6,#00A9D6,#00B9A9,#8A0EB5);
+                height: 160vh;
+            }
+
+          h1 {
+            color:white;
+            margin-left: 535px;
+        }
+
+            .PictureDiv {
+                background-image: url(/DoctorImage.png);
+                max-width: 100vh;
+                height: 350px;
+                display: block;
+                margin-left:225px;
+            }
+
+            .BackButton {
+                height: 50px;
+                width: 70px;
+                background-color: white;
+                border-radius: 10px;
+                font-weight: bold;
+            }  
+            
+            .BackButton:hover {
+                background-color: #ada5a5;
+            }
+
+            .overlay {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: rgb(0,0,0);
+                opacity: 0.95;
+                overflow-x: hidden;
+                transition: 0.5s;
+            }
+
+            .overlay-content {
+                position: relative;
+                top: 9%;
+                width: 100%;
+                text-align: center;
+                margin-top:30px;
+            }
+
+            .overlay a {
+                padding:8px;
+                text-decoration: none;
+                font-size:20px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+
+            .overlay a:hover, .overlay a:focus {
+                color: #f1f1f1;
+            }
+
+            .overlay .closebtn {
+                position: absolute;
+                top: 20px;
+                right: 45px;
+                font-size:60px;
+            }
+
+            .Lines {
+                color: white;
+            }
+
+            .JobText {
+                margin: 0;
+                padding: 15px;
+            }
+
+            .Article {
+                margin-top:30px;
+                position: relative;
+                top: 50px;
+                left: 50px;
+                height: 150px;
+                width: 700px;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                color: white;
+                font-size: 17px;
+                border-style:double;
+                padding: 15px;
+                border-color:black;
+                border-width: 5px;
+                border-radius: 10px;
+                background-color: rgba(128,128,128,0.5);
+            }
+
+            .AsideImage {
+                position: absolute;
+                left: 1050px;
+                top: 420px;
+            }
+
+            .AsidePicture {
+                position: absolute;
+                left: -10px;
+                top: 180px;
+                width: 300px;
+                height: 300px;
+            }
+
+            .MoreText {
+                position: relative;
+                bottom: -90px;
+                color: white;
+                border-radius: 5px;
+                border-style: double;   
+                border-width: 5px;
+                padding: 5px;
+                background-color:rgba(128,128,128,0.7);
+                transition: 0.5s;
+            }
+
+            .HideText {
+                color: white;
+                background-color: rgba(128,128,128,0.7);
+                border-radius: 5px;
+                border-style: double;
+                border-width: 5px;
+                visibility: hidden;
+                position: relative;
+                bottom: -290px;
+                height: 0;
+                width: 0;
+                text-indent: -999px;
+                transition: 0.8s;
+            }
+
+            .HiddenArticle {
+                visibility: hidden;
+                color: white;
+                background-color: rgba(128,128,128,0.5);
+                position: relative;
+                bottom: -10px;
+                left: 50px;
+                border-radius: 10px;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                border-style: double;
+                border-color: black;
+                border-width: 5px;
+                width: 0;
+                height: 0;
+                text-indent: -999px;
+                font-size: 17px;
+                transition: 0.5s;
+            }
+
+            .WhatPage {
+                margin: 0;
+                position: absolute;
+                top: -50px;
+                left: 425px;
+                padding-bottom: 15px;
+                display: block;
+                transition: 0.3s;
+            }
+
+            </style>
+        <title>Nurses and Doctors</title>
+      <div class="Gradient">
+        <body class="nursebody">
+
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <div class="overlay-content">
+                    <h1 class="WhatPage">You Are On the Nurse&Doctor Page</h1>
+                    <a href="#" onclick="location.href = '../index.html'">Home Page</a>
+                    <h1 class="JobText">Medical Jobs</h1>
+                    <a href="#" onclick="location.href = 'Dentist.html'">Dentist</a>
+                    <a href="#" onclick="location.href = 'Pharmacist.html'">Pharmacist</a>
+                    <a href="#" onclick="location.href = 'Physician.html'">Physician</a>
+                    <a href="#" onclick="location.href = 'PhysicalTherapist.html'">Physical Therapist</a>
+                    <a href="#" onclick="location.href = 'Veterinarian.html'">Veterinarian</a>
+                    <a href="#" onclick="location.href = 'Epidemiologist.html'">Epidemiologist</a>
+                    <h1 class="JobText">Business Jobs</h1>
+                    <a href="#" onclick="location.href = 'Logistics.html'">Logistics</a>
+                    <a href="#" onclick="location.href = 'Actuary.html'">Actuary</a>
+                    <a href="#" onclick="location.href = 'MarketAnalyst.html'">Market Analyst</a>
+                    <a href="#" onclick="location.href = 'Lawyer.html'">Lawyer</a>
+                    <a href="#" onclick="location.href = 'FinanicalManager.html'">Finanical Manager</a>
+                    <h1 class="JobText">Technology Jobs</h1>
+                    <a href="#" onclick="location.href = 'ComputerSystemAnalyst.html'">Computer System Analyst</a>
+                    <a href="#" onclick="location.href = 'DatabaseAdministrator.html'">Database Administrator</a>
+                    <a href="#" onclick="location.href = 'Cybersecurity.html'">Cybersecurity</a>
+                    <a href="#" onclick="location.href = 'ComputerProgrammer.html'">Computer Programmer</a>
+                    <a href="#" onclick="location.href = 'ITManager.html'">IT Manager</a>
+                    <h1 class="JobText">Miscellaneous Jobs</h1>
+                    <a href="#" onclick="location.href = 'Interpreter&Translators.html'">Interpreter and Translators</a>
+                    <a href="#" onclick="location.href = 'MechanicalEngineer.html'">Mechanical Engineer</a>
+                    <a href="#" onclick="location.href = 'VeterinaryTechnologist.html'">Veterinary Technologist</a>
+                    </div>
+
+            </div>
+
+            <span class="Lines" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+            <script>
+                function openNav() {
+                  document.getElementById("myNav").style.width = "100%";
+                }
+                
+                function closeNav() {
+                  document.getElementById("myNav").style.width = "0%";
+                }
+                </script>
+
+            <h1>Nurse and Doctors</h1>
+
+            <div class="PictureDiv">
+            </div>
+
+            <article class="Article">
+                <h2 class="Article2Text">Nurse And Doctors</h2>
+                <p>Doctors give orders and develop treatment plans, while nurses collaborate with a team of providers to put those plans into practice. Doctors interpret reports such as lab results and X-rays; nurses help patients with activities of daily living (ADLs).</p>
+            </article>
+
+            <aside class="AsideImage">
+                <img class="AsidePicture" src="/nurse image.png">
+            </aside>
+
+            <button id="MoreText" class="MoreText" onclick="myFunction()">
+                <h3>Show more text</h5>
+                </button>
+
+             <button id="HideText" class="HideText" onclick="myFunction2()">
+                    <h3>Close Text</h5>
+                    </button>
+
+                <article id="HiddenArticle" class="HiddenArticle">
+                    <h2 class="HiddenArticleText">Nurse And Doctor facts</h2>
+                    <p>4.2 Million nurses worldwide. There are 4x the amount of nurses in comparision to doctors. The average nurse makes about $85,000 a year, a doctor makes about $200,000 a year. </p>
+                </article>
+
+                <script>
+                    function myFunction() {
+                        document.getElementById("HiddenArticle").style.visibility = "visible";
+                        document.getElementById("HiddenArticle").style.padding = "15px";
+                        document.getElementById("HiddenArticle").style.height = "150px";
+                        document.getElementById("HiddenArticle").style.width = "700px";
+                        document.getElementById("HiddenArticle").style.textIndent = "0px";
+                        document.getElementById("MoreText").style.visibility = "hidden";
+                        document.getElementById("MoreText").style.padding = "0px";
+                        document.getElementById("MoreText").style.height = "0px";
+                        document.getElementById("MoreText").style.width = "0px";
+                        document.getElementById("MoreText").style.textIndent = "-999px";
+                        document.getElementById("HideText").style.visibility = "visible";
+                        document.getElementById("HideText").style.padding = "5px";
+                        document.getElementById("HideText").style.height = "70px";
+                        document.getElementById("HideText").style.width = "100px";
+                        document.getElementById("HideText").style.textIndent = "0px";
+                    }
+
+                    function myFunction2() {
+                        document.getElementById("HiddenArticle").style.visibility = "hidden";
+                        document.getElementById("HiddenArticle").style.padding = "0px";
+                        document.getElementById("HiddenArticle").style.height = "0px";
+                        document.getElementById("HiddenArticle").style.width = "0px";
+                        document.getElementById("HiddenArticle").style.textIndent = "-999px";
+                        document.getElementById("MoreText").style.visibility = "visible";
+                        document.getElementById("MoreText").style.padding = "5px";
+                        document.getElementById("MoreText").style.height = "70px";
+                        document.getElementById("MoreText").style.width = "140px";
+                        document.getElementById("MoreText").style.textIndent = "0px"
+                        document.getElementById("HideText").style.visibility = "hidden";
+                        document.getElementById("HideText").style.padding = "0px";
+                        document.getElementById("HideText").style.height = "0px";
+                        document.getElementById("HideText").style.width = "0px";
+                        document.getElementById("HideText").style.textIndent = "-999px";
+                    }
+                </script>
+
+        </body>
+    </div>
+    </head>
+</html>
